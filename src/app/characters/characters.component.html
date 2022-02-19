@@ -1,0 +1,13 @@
+<div fxFlex fxLayout="column">
+  <div fxLayout="row wrap">
+      <div fxflex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" *ngFor="let character of allCharacters | async" >
+
+        <mat-card *ngIf="character.thumbnail.path != 'http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available'" class="card-container">
+          <img class="card-container-img" src="{{character.thumbnail.path}}.{{character.thumbnail.extension}}" alt="">
+          <mat-card-title>
+            {{character.name}}
+          </mat-card-title>
+        </mat-card>
+      </div>
+    </div>
+</div>
