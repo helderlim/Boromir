@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-characters',
+  selector: 'characters',
   templateUrl: './characters.component.html',
   styleUrls: ['./characters.component.scss']
 })
