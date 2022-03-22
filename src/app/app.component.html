@@ -1,1 +1,19 @@
-<homepage></homepage>
+<mat-toolbar>
+  <span>My App</span>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="" routerLinkActive="active">
+    <p>Home</p>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" routerLink="/character" routerLinkActive="active">
+    <p>character</p>
+  </button>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar>
+    <!-- <li><a routerLink="/home" routerLinkActive="active">First Component</a></li>
+    <li><a routerLink="/character" routerLinkActive="active">Second Component</a></li> -->
+<router-outlet></router-outlet>
